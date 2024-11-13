@@ -5,9 +5,9 @@ from twitchio.ext import commands
 import os
 
 # Configuração direta dos tokens e IDs
-ACCESS_TOKEN = 'seu_token'
-REFRESH_TOKEN = 'seu_refresh_token'
-CLIENT_ID = 'seu_client_id'
+ACCESS_TOKEN = 'zw1zv7ltonhexc13m0r8b3rb13h5g5'
+REFRESH_TOKEN = 'oc8g5j7yk8869aymsbtgtbghfs5awwzlkjfsgc7tam4r1oh6co'
+CLIENT_ID = 'gp762nuuoqcoxypju8c569th9wz7q5'
 
 # Inicialize o bot com o token e os canais
 bot = commands.Bot(
