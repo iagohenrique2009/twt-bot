@@ -11,7 +11,7 @@ CLIENT_ID = 'gp762nuuoqcoxypju8c569th9wz7q5'
 bot = commands.Bot(
     token=ACCESS_TOKEN,  # Token de acesso direto no código
     prefix='!',  # Prefixo para comandos
-    initial_channels=['iagonumeros']  # Substitua com o nome do seu canal
+    initial_channels=['nevertoolatel2'] 
 )
 
 @bot.event
