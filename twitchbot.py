@@ -11,7 +11,7 @@ CLIENT_ID = 'gp762nuuoqcoxypju8c569th9wz7q5'
 bot = commands.Bot(
     token=ACCESS_TOKEN,  # Token de acesso direto no código
     prefix='!',  # Prefixo para comandos
-    initial_channels=['nevertoolatel2'] 
+    initial_channels=['nevertoolatel2']  # Substitua com o nome do seu canal
 )
 
 @bot.event
@@ -27,7 +27,10 @@ async def event_message(ctx):
 
 # Função para verificar se a imagem está disponível no endpoint /prompt
 async def check_image_ready(img_name):
-    image_url = f'https://image.pollinations.ai/prompt/{img_name}'
+    # Substitui espaços por %20 no nome da imagem para construir a URL corretamente
+    formatted_img_name = img_name.replace(" ", "%20")
+    image_url = f'https://image.pollinations.ai/prompt/{formatted_img_name}'
+    
     async with aiohttp.ClientSession() as session:
         while True:
             async with session.get(image_url) as response:
